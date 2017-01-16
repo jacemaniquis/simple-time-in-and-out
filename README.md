@@ -1,4 +1,4 @@
-# Simple time in and out
+# Simple time in and out system
 Simple time in and out I made using 
 
 - C#
