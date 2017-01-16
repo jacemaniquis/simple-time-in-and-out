@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudERP.Web", "CloudERP.Web\CloudERP.Web.csproj", "{E2108741-02AE-43D4-B33C-04C5C8A2D548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudERP.Context", "CloudERP.Context\CloudERP.Context.csproj", "{B61F30D3-D25C-4FCB-80F2-5A53C3832D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudERP.KioskNfcReader", "CloudERP.KioskNfcReader\CloudERP.KioskNfcReader.csproj", "{AFA2AC24-13B7-4699-8E47-37DFF4097AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudERP.KioskService", "CloudERP.KioskService\CloudERP.KioskService.csproj", "{BE04ADC0-5601-44E8-9E6A-AC706E878BA1}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CloudERP.KioskServiceInstaller", "CloudERP.KioskServiceInstaller\CloudERP.KioskServiceInstaller.vdproj", "{8E61D278-482C-4ADC-AB92-6EBE845F6267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudERP.KioskWeb", "CloudERP.KioskWeb\CloudERP.KioskWeb.csproj", "{97ADD3A9-88D4-4507-A769-AB311383CA4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudERP.KioskApp", "CloudERP.KioskApp\CloudERP.KioskApp.csproj", "{14A4E278-627E-494D-A408-94AD412D68CA}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ChromeExtension", "ChromeExtension\", "{B8DD5E13-8D00-43D0-98FB-4AABD0602D8F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58705"
+		Debug.AspNetCompiler.PhysicalPath = "ChromeExtension\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58705\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58705"
+		Release.AspNetCompiler.PhysicalPath = "ChromeExtension\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58705\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58705"
+		SlnRelativePath = "ChromeExtension\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2108741-02AE-43D4-B33C-04C5C8A2D548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2108741-02AE-43D4-B33C-04C5C8A2D548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2108741-02AE-43D4-B33C-04C5C8A2D548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2108741-02AE-43D4-B33C-04C5C8A2D548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61F30D3-D25C-4FCB-80F2-5A53C3832D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61F30D3-D25C-4FCB-80F2-5A53C3832D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61F30D3-D25C-4FCB-80F2-5A53C3832D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61F30D3-D25C-4FCB-80F2-5A53C3832D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA2AC24-13B7-4699-8E47-37DFF4097AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA2AC24-13B7-4699-8E47-37DFF4097AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA2AC24-13B7-4699-8E47-37DFF4097AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA2AC24-13B7-4699-8E47-37DFF4097AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE04ADC0-5601-44E8-9E6A-AC706E878BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE04ADC0-5601-44E8-9E6A-AC706E878BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE04ADC0-5601-44E8-9E6A-AC706E878BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE04ADC0-5601-44E8-9E6A-AC706E878BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E61D278-482C-4ADC-AB92-6EBE845F6267}.Debug|Any CPU.ActiveCfg = Debug
+		{8E61D278-482C-4ADC-AB92-6EBE845F6267}.Debug|Any CPU.Build.0 = Debug
+		{8E61D278-482C-4ADC-AB92-6EBE845F6267}.Release|Any CPU.ActiveCfg = Release
+		{8E61D278-482C-4ADC-AB92-6EBE845F6267}.Release|Any CPU.Build.0 = Release
+		{97ADD3A9-88D4-4507-A769-AB311383CA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97ADD3A9-88D4-4507-A769-AB311383CA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97ADD3A9-88D4-4507-A769-AB311383CA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97ADD3A9-88D4-4507-A769-AB311383CA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A4E278-627E-494D-A408-94AD412D68CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A4E278-627E-494D-A408-94AD412D68CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A4E278-627E-494D-A408-94AD412D68CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A4E278-627E-494D-A408-94AD412D68CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DD5E13-8D00-43D0-98FB-4AABD0602D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DD5E13-8D00-43D0-98FB-4AABD0602D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DD5E13-8D00-43D0-98FB-4AABD0602D8F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DD5E13-8D00-43D0-98FB-4AABD0602D8F}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

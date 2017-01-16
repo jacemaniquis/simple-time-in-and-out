@@ -1,0 +1,54 @@
+﻿@using System.Configuration
+@model CloudERP.KioskWeb.Models.LoginLogoutModel
+
+@{
+    ViewBag.Title = "_Modal";
+}
+
+
+<div class="modal-header">
+    @switch (Model.Status)
+    {
+        case CloudERP.KioskWeb.Models.Status.Success:
+            if (Model.IsLogin)
+            {
+                <h4>Successfully Logged In</h4>
+            }
+            else
+            {
+                <h4>Successfully Logged Out</h4>
+            }
+            break;
+        case CloudERP.KioskWeb.Models.Status.Warning:
+        <h4>Warning</h4>
+            break;
+        case CloudERP.KioskWeb.Models.Status.Error:
+        <h4>Unexpected Error Occur</h4>
+            break;
+    }
+</div>
+<div class="modal-body">
+    @switch (Model.Status)
+    {
+        case CloudERP.KioskWeb.Models.Status.Success:
+            if (Model.IsLogin)
+            {
+                <h4>Hi @Model.Name! @Model.Description</h4>
+            }
+            else
+            {
+                <h4>Goodbye @Model.Name! @Model.Description</h4>
+            }
+            break;
+        case CloudERP.KioskWeb.Models.Status.Warning:
+            <h4>Hi @Model.Name! @Model.Description</h4>
+            break;
+        case CloudERP.KioskWeb.Models.Status.Error:
+            <h4>@Model.Description</h4>
+            break;
+    }
+</div>
+
+<script>
+    $('#serial').focus();
+</script>

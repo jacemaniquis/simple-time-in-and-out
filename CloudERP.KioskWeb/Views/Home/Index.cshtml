@@ -1,0 +1,220 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="height: 50%; padding-top: 15%; margin: auto">
+    <div style="margin: auto; width: 275px">
+        <h1 id="time">0:00 AM</h1>
+        <p id="date" class="lead">Sunday, January 1, 0000</p>
+    </div>
+</div>
+
+<div style="margin: auto; width: 508px; margin-top:20px">
+    <a id="btnLogin" href="#" class="btn btn-primary btn-lg" style="padding: 65px 95px !important; margin-right: 20px; cursor: none !important" data-toggle="modal" data-target="#myModal">Login</a>
+    <a id="btnLogout" href="#" class="btn btn-default btn-lg" style="padding: 65px 95px !important; cursor: none !important">Logout</a>
+</div>
+
+@*<input id="serial" type="text" autofocus style="width: 0px; height: 0px; left:0;bottom:0;position:absolute"/>*@
+
+<div id="serial" style="color:white"></div>
+<input id="islogin" type="hidden" value="true" />
+
+<div class="modal fade" id="modalNotification" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="vertical-alignment-helper">
+            <div id="modalContent" class="modal-content">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<audio id="beep_success" src="~/beep_success.wav"></audio>
+<audio id="beep_fail" src="~/beep_fail.wav"></audio>
+
+@section Scripts{
+    <script>
+        var map = [];
+        var str = "";
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+
+        $(function() {
+            var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+            setInterval(function() {
+                var date = new Date();
+                var year = date.getFullYear(),
+                    month = date.getMonth() + 1, // months are zero indexed
+                    day = date.getDate(),
+                    hour = date.getHours(),
+                    minute = date.getMinutes().toString().length > 1 ? date.getMinutes() : "0" + date.getMinutes(),
+                    second = date.getSeconds(),
+                    hourFormatted = hour % 12 || 12, // hour returned in 24 hour format
+                    minuteFormatted = minute < 10 ? "0" + minute : minute,
+                    morning = hour < 12 ? "AM" : "PM";
+
+                $('#time').text(hourFormatted + ":" + minute + " " + morning);
+                $('#date').text(days[date.getDay()] + ", " + months[date.getMonth()] + " " + day + ", " + year);
+
+            }, 1000);
+
+            $('html').on('paste', function(e) {
+                var pasteData = e.originalEvent.clipboardData.getData('text');
+                process(pasteData, $('#islogin').val());
+                str = "";
+            });
+
+            /*$('html').keydown(function(data) {
+                map[data.keyCode] = data.keyCode;
+                for (x = 0; x < map.length; x++) {
+                    if (typeof map[x] !== "undefined") {
+                        console.log(map[x]);
+                        str += String.fromCharCode(map[x]);
+                    }
+                }
+                console.log(str);
+            });
+
+            $('html').keyup(function(data) {
+                if (str.length !== 0) {
+                    process(str, $('#islogin').val());
+                    str = "";
+                }
+            });*/
+
+            /*$('#serial').focus();
+            // Force focus
+            $('#serial').focusout(function() {
+                $('#serial').focus();
+            });
+
+            $('html').click(function() {
+                $('#serial').focus();
+            });
+
+            $('#serial').on('keydown', function(e) {
+                if (e.which == 13) {
+                    e.preventDefault();
+                    process($('#serial').val(), $('#islogin').val());
+                    $('#serial').val("");
+                }
+            });*/
+
+
+            $('#serial').click(function() {
+                process($('#serial').html(), $('#islogin').val());
+                $('#serial').html("");
+                $('#serialchangeevent').html("");
+            });
+
+            $('#btnLogin').click(function () {
+                $('#btnLogin').removeClass("btn-default").addClass("btn-primary");
+                $('#btnLogout').removeClass("btn-primary").addClass("btn-default");
+                $('#islogin').val(true);
+                return false;
+            });
+
+            $('#btnLogout').click(function() {
+                $('#btnLogout').removeClass("btn-default").addClass("btn-primary");
+                $('#btnLogin').removeClass("btn-primary").addClass("btn-default");
+                $('#islogin').val(false);
+                return false;
+            });
+        });
+
+        //setTimeout("location.reload(true);", 600000);
+
+        function process(s, l) {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Index", "Home")',
+                data: { serial: s, isLogin: l },
+                success: function (data, status) {
+
+                    if (data !== "") {
+                        var title = data.match(/<p id="title"[^>]*>([^<]+)<\/p>/)[1];
+                        if (title === 'Successfully Logged In' || title === 'Successfully Logged Out') {
+                            toastr.success(data);
+                            var beepSuccess = $('#beep_success')[0];
+                            beepSuccess.pause();
+                            beepSuccess.currentTime = 0;
+                            beepSuccess.play();
+                        }
+                        else if (title === 'Warning') {
+                            toastr.warning(data);
+                            var beepWarning = $('#beep_fail')[0];
+                            beepWarning.pause();
+                            beepWarning.currentTime = 0;
+                            beepWarning.play();
+                        } else {
+                            toastr.error(data);
+                            var beepError = $('#beep_fail')[0];
+                            beepError.pause();
+                            beepError.currentTime = 0;
+                            beepError.play();
+                        }
+
+                        $('#serial').focus();
+
+
+                        /*$('#modalContent').html(data);
+                        $('#modalNotification').modal('show');
+                        setTimeout(function() {
+                            $('#modalNotification').modal('hide');
+                            map = [];
+                        }, 2000);*/
+                    }
+                },
+                error: function(request, status, error) {
+                    console(request.responseText);
+                    toastr.error(request.responseText);
+                    var beepError = $('#beep_fail')[0];
+                    beepError.pause();
+                    beepError.currentTime = 0;
+                    beepError.play();
+                    $('#serial').focus();
+                }
+            });
+        }
+
+        setInterval(function() {
+            checkassigncard();
+        }, 5000);
+
+        function checkassigncard() {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("CheckCardAssigning", "Home")',
+                success: function(data, status) {
+                    if (data !== "") {
+                        window.location = '/Home/AssignCard/' + data;
+                    }
+                },
+                error: function(request, status, error) {
+                    console(request.responseText);
+                    $('#serial').focus();
+                }
+            });
+        }
+    </script>
+}
+
+

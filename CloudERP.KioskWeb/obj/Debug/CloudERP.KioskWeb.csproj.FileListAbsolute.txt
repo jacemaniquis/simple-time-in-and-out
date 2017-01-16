@@ -1,0 +1,177 @@
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\ApplicationInsights.config
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\csc.exe
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\vbc.exe
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\VBCSCompiler.exe
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.dll.config
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Antlr3.Runtime.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.Web.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Newtonsoft.Json.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.Helpers.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.Mvc.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.Optimization.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.Razor.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.Razor.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\WebGrease.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.Web.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.Helpers.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.Mvc.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.Optimization.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.Razor.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.Razor.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Antlr3.Runtime.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\Newtonsoft.Json.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.csprojResolveAssemblyReference.cache
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\CloudERP.Context.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\EntityFramework.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\EntityFramework.SqlServer.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\CloudERP.Context.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\EntityFramework.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskWeb\bin\EntityFramework.SqlServer.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\ApplicationInsights.config
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\csc.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\System.Collections.Immutable.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\System.Reflection.Metadata.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\vbc.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\VBCSCompiler.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\roslyn\VBCSCompiler.exe.config
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.dll.config
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Antlr3.Runtime.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\CloudERP.Context.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\EntityFramework.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\EntityFramework.SqlServer.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.DependencyCollector.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.Web.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.WindowsServer.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.ApplicationInsights.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.Web.Infrastructure.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Newtonsoft.Json.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.Helpers.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.Mvc.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.Optimization.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.Razor.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.Deployment.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.Razor.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\WebGrease.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\CloudERP.Context.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\EntityFramework.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\EntityFramework.SqlServer.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.DependencyCollector.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.Web.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.AI.WindowsServer.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.ApplicationInsights.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.Helpers.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.Mvc.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.Optimization.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.Razor.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.Deployment.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\System.Web.WebPages.Razor.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Antlr3.Runtime.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\bin\Newtonsoft.Json.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.csprojResolveAssemblyReference.cache
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.pdb
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\ApplicationInsights.config
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\csc.exe
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\System.Collections.Immutable.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\System.Reflection.Metadata.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\vbc.exe
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\VBCSCompiler.exe
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\roslyn\VBCSCompiler.exe.config
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.dll.config
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\CloudERP.KioskWeb.pdb
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Antlr3.Runtime.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\CloudERP.Context.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\EntityFramework.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\EntityFramework.SqlServer.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.DependencyCollector.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.Web.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.WindowsServer.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.ApplicationInsights.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.Web.Infrastructure.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Newtonsoft.Json.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.Helpers.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.Mvc.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.Optimization.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.Razor.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.WebPages.Deployment.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.WebPages.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.WebPages.Razor.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\WebGrease.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\CloudERP.Context.pdb
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\EntityFramework.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\EntityFramework.SqlServer.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.DependencyCollector.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.Web.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.AI.WindowsServer.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.ApplicationInsights.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.Helpers.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.Mvc.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.Optimization.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.Razor.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.WebPages.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.WebPages.Deployment.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\System.Web.WebPages.Razor.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Antlr3.Runtime.pdb
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\bin\Newtonsoft.Json.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.csprojResolveAssemblyReference.cache
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskWeb\obj\Debug\CloudERP.KioskWeb.pdb

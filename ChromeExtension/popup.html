@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+    <title>Cloud Employee</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f8f8f8;
+            font-family: "Open Sans", Arial, Helvetica, Sans-Serif;
+        }
+         #loading {
+             width: 100%;
+             height: 100%;
+             z-index: 1000;
+             top: 0px;
+             left: 0px;
+             position: absolute;
+             background: white url(loader.gif) center center no-repeat;
+         }
+    </style>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div id="container">
+        <iframe id="frame" frameborder="0" width="345px" height="395px"></iframe>
+        <div id="loading"></div>
+    </div>
+</body>
+</html>

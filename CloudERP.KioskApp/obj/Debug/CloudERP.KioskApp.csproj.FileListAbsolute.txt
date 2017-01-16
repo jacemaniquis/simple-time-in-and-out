@@ -1,0 +1,22 @@
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\bin\Debug\CloudERP.KioskApp.exe.config
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\bin\Debug\CloudERP.KioskApp.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\bin\Debug\CloudERP.KioskApp.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\bin\Debug\WebDriver.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\bin\Debug\WebDriver.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\obj\Debug\CloudERP.KioskApp.csprojResolveAssemblyReference.cache
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\obj\Debug\CloudERP.KioskApp.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\obj\Debug\CloudERP.KioskApp.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\bin\Debug\pcsc-sharp.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\bin\Debug\pcsc-sharp.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskApp\bin\Debug\pcsc-sharp.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\bin\Debug\CloudERP.KioskApp.exe.config
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\bin\Debug\CloudERP.KioskApp.exe
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\bin\Debug\CloudERP.KioskApp.pdb
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\bin\Debug\pcsc-sharp.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\bin\Debug\WebDriver.dll
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\bin\Debug\pcsc-sharp.pdb
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\bin\Debug\pcsc-sharp.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\bin\Debug\WebDriver.xml
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\obj\Debug\CloudERP.KioskApp.csprojResolveAssemblyReference.cache
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\obj\Debug\CloudERP.KioskApp.exe
+E:\Jace\My Projects\CloudERP\CloudERP - May 4 Export, Flexitime (Final Stable)\CloudERP.KioskApp\obj\Debug\CloudERP.KioskApp.pdb

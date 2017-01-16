@@ -1,0 +1,158 @@
+﻿@model CloudERP.Web.Models.ChromeModel
+
+@{
+    ViewBag.Title = "Started";
+}
+
+<style>
+    #preloader {
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        background: white url(/images/chrome_preloader.gif) center center no-repeat;
+    }
+</style>
+
+<div id="preloader"></div>
+
+<div class="navbar navbar-inverse" style="background: linear-gradient(to right, #449d44 80%, #449d44 100%); border-color: #449d44; margin-bottom:0px">
+    <div class="container">
+        <h4 style="color: white; padding-top:7px">Hi @Model.Name!</h4>
+    </div>
+</div>
+<div class="container body-content">
+    <div class="col-mg-12">
+        
+        @using (Html.BeginForm("Started", "Chrome", FormMethod.Post, new {role = "form"}))
+        {
+            <table style="width: 100%">
+                <tbody>
+                <tr>
+                    <td style="padding-left: 13px">
+                        <div>
+                            <h2 id="time" style="margin-bottom: 1px">12:00 AM</h2>
+                            <small id="date"></small>
+                        </div>
+                    </td>
+                    <td>
+                        <h2 id="renderedhours" style="margin-bottom: 1px">@Model.TotalHours</h2>
+                        <small>Rendered Hours / Minute</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-top: 25px; padding-left: 13px">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <small>Status:</small>
+                                </td>
+                                <td style="padding-left: 10px">
+                                    <small>Logged In</small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <small>Started at:</small>
+                                </td>
+                                <td style="padding-left: 10px">
+                                    <small>@Model.LastTimeIn</small>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <hr style="margin-top: 14px; margin-bottom: 14px"/>
+
+            <input type="submit" value="Time-out" class="btn btn-primary"/>
+            <a href="#" id="timesheetbtn" class="btn btn-default">My Attendance</a>
+        }
+    </div>
+</div>
+
+
+
+@section scripts{
+    <script>
+        $(function () {
+            //Disable right click
+            $(document).bind("contextmenu", function (e) {
+                e.preventDefault();
+            });
+
+            top.postMessage({ "command": "frame:resize", "height": "273", "width": "345" }, "*");
+
+
+            var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+            var hourRendered = null;
+            var minuteRendered = null;
+            var lastMinute = null;
+
+            setInterval(function () {
+                var date = new Date();
+                var year = date.getFullYear(),
+                    month = date.getMonth() + 1, // months are zero indexed
+                    day = date.getDate(),
+                    hour = date.getHours(),
+                    minute = date.getMinutes().toString().length > 1 ? date.getMinutes() : "0" + date.getMinutes(),
+                    second = date.getSeconds(),
+                    hourFormatted = hour % 12 || 12, // hour returned in 24 hour format
+                    minuteFormatted = minute < 10 ? "0" + minute : minute,
+                    morning = hour < 12 ? "AM" : "PM";
+
+                $('#time').text(hourFormatted + ":" + minute + " " + morning);
+                $('#date').text(days[date.getDay()] + ", " + months[date.getMonth()] + " " + day + ", " + year);
+
+                if (hourRendered === null) {
+                    hourRendered = parseInt($('#renderedhours').text().split(':')[0]);
+                }
+
+                if (minuteRendered === null) {
+                    minuteRendered = parseInt($('#renderedhours').text().split(':')[1]);
+                }
+
+                if (lastMinute === null) {
+                    lastMinute = minute;
+                }
+
+                if (lastMinute !== minute) {
+                    lastMinute = minute;
+                    minuteRendered = minuteRendered + 1;
+
+                    if (minuteRendered >= 60) {
+                        hourRendered = hourRendered + 1;
+                        minuteRendered = 0;
+
+                        $('#renderedhours').text(hourRendered + ":" + (minuteRendered < 10 ? "0" + minuteRendered : minuteRendered));
+                    } else {
+                        $('#renderedhours').text(hourRendered + ":" + (minuteRendered < 10 ? "0" + minuteRendered : minuteRendered));
+                    }
+                }
+
+                $('#preloader').fadeOut();
+            }, 1000);
+
+            $('#timesheetbtn').click(function () {
+                top.postMessage({ "command": "frame:redirect", "url": '@Url.Action("Index","Attendance", new { Area = "HR" }, Request.Url.Scheme)' }, "*");
+                return false;
+            });
+        });
+    </script>
+}
+
+
+
+

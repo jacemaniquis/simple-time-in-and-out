@@ -1,0 +1,198 @@
+﻿@using Newtonsoft.Json
+@model CloudERP.Web.Areas.HR.Models.RangeAttendanceViewModel
+@{
+    ViewBag.Title = "Attendance";
+    Layout = "~/Views/Shared/_AuthenticatedLayout.cshtml";
+}
+
+@{ var days = EachDay(Model.FirstDate, Model.LastDate).ToList(); }
+
+<div class="col-lg-12">
+    <div class="col-lg-12">
+        <div class="form-group">
+            <a href="@Url.Action("Index")" class="btn btn-success">View By Day</a>
+            <a id="exporttoexcel" href="#" class="btn btn-primary">Export To Excel</a>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <h3>
+            Result for
+            <small style="padding-left: 2px">@string.Format("{0} - {1}", Model.FirstDate.ToString("dd MMM yyyy"), Model.LastDate.ToString("dd MMM yyyy"))</small>
+        </h3>
+    </div>
+    @using (Html.BeginForm("Range", "Attendance", FormMethod.Post))
+    {
+        <div class="col-lg-12 form-inline">
+            <div class="form-group">
+                <input type="text" name="firstdate" class="datepicker form-control" />
+            </div>
+            <div class="form-group">
+                up to
+            </div>
+            <div class="form-group">
+                <input type="text" name="lastdate" class="datepicker form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Filter" class="form-control" />
+            </div>
+        </div>
+    }
+
+    <div class="panel-body col-lg-12">
+        <table class="table table-striped table-bordered table-hover" id="datatable" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Total Hours</th>
+                    <th>Schedule</th>
+                    <th>Total Days</th>
+
+                    @foreach (var day in days)
+                    {
+                        <th>@day.ToString("MMMM dd")</th>
+                    }
+
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+</div>
+
+
+@section Scripts {
+
+    <script>
+        $(function() {
+
+            var column = @Html.Raw(GenerateColumns(days));
+
+            $('.datepicker').datepicker(
+            {
+                //singleDate: true,
+                //format: 'M/DD/YYYY',
+                autoClose: true,
+            });
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            function download(url, param) {
+                $("body").append("<form action='" + url + "' id='formexcel' method='POST' style='display:none;visibility:hidden'><input type='hidden' name='param' value='" + param + "'/></form>");
+                $("#formexcel").submit();
+                $("#formexcel").remove();
+            }
+
+            var dtable = $('#datatable').DataTable({
+                responsive: true,
+                processing: true,
+                serverSide: true,
+                ajax: {
+                    url: '@Url.Action("RangeData")?firstdate=@Model.FirstDate&lastdate=@Model.LastDate',
+                    type: 'POST',
+                    dataSrc: function(json) {
+                        if (json.url !== undefined) {
+                            download(json.url, json.param);
+                        }
+
+                        if (json.data !== undefined) {
+                            return json.data;
+                        } else {
+                            setInterval(function () {
+                                if (getCookie('rangeuploadexcel') !== '') {
+                                    document.cookie = 'rangeuploadexcel=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                                    window.location = '@Url.Action("Range")';
+                                }
+                            }, 500);
+                        }
+                    },
+                    error: function(xhr, error, thrown) {
+                        window.location = '@Url.Action("Range")';
+                    }
+                },
+                aoColumns: column
+            });
+
+            $(".dataTables_filter input")
+                .unbind()
+                .bind('keyup', function(e) {
+                    if (e.keyCode == 13) {
+                        // Call the API search function
+                        dtable.search(this.value).draw();
+                    }
+                    // Ensure we clear the search if they backspace far enough
+                    if (this.value == "") {
+                        dtable.search("").draw();
+                    }
+                    return;
+                });
+
+            $('#exporttoexcel').click(function() {
+                dtable.ajax.url('@Url.Action("ExportToExcel")?firstdate=@Model.FirstDate&lastdate=@Model.LastDate&frmt=byrange&callbackurl=@Request.Url.AbsolutePath');
+                dtable.search($(".dataTables_filter input").val()).draw();
+                return false;
+            });
+
+
+        });
+    </script>
+}
+
+@functions{
+
+    private IEnumerable<DateTime> EachDay(DateTime from, DateTime thru)
+    {
+        for (var day = from.Date; day.Date <= thru.Date; day = day.AddDays(1))
+            yield return day;
+    }
+
+    private string GenerateColumns(IEnumerable<DateTime> days)
+    {
+        var dic = new List<Dictionary<string, object>>();
+
+        var nameCol = new Dictionary<string, object>();
+        nameCol.Add("data", "name");
+        dic.Add(nameCol);
+
+        var totalHours = new Dictionary<string, object>();
+        totalHours.Add("data", "total_hours");
+        totalHours.Add("bSortable", false);
+        dic.Add(totalHours);
+
+        var mainSched = new Dictionary<string, object>();
+        mainSched.Add("data", "schedule");
+        mainSched.Add("bSortable", false);
+        dic.Add(mainSched);
+
+        var totalDays = new Dictionary<string, object>();
+        totalDays.Add("data", "total_days");
+        totalDays.Add("bSortable", false);
+        dic.Add(totalDays);
+
+        foreach (var day in days)
+        {
+            var col = new Dictionary<string, object>();
+
+            col.Add("data", day.ToString("MMMM_dd").ToLower());
+            col.Add("bSortable", false);
+
+            dic.Add(col);
+        }
+
+        return JsonConvert.SerializeObject(dic);
+    }
+
+}

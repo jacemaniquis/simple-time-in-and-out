@@ -1,0 +1,58 @@
+﻿<div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notif-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @if (TempData["ModalTitle"] != null)
+            {
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="modal-notif-label">@TempData["ModalTitle"]</h4>
+                </div>
+            }
+
+            @if (ViewBag.ModalTitle != null)
+            {
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="modal-notif-label">@ViewBag.ModalTitle</h4>
+                </div>
+            }
+
+            <div class="modal-body" id="modal-notif-body">
+                @TempData["ModalMessage"]
+                @ViewBag.ModalMessage
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+@if (TempData["ShowModal"] != null)
+{
+    if (bool.Parse(TempData["ShowModal"].ToString()))
+    {
+        <script>
+            $(window).load(function () {
+                $('#modal-notification').modal('show');
+            });
+        </script>
+    }
+}
+
+@if (ViewBag.ShowModal != null)
+{
+    if (ViewBag.ShowModal)
+    {
+        <script>
+            $(window).load(function () {
+                $('#modal-notification').modal('show').on('hidden.bs.modal', function () {
+                    window.location = '@ViewBag.ModalCallbackUrl';
+                });
+            });
+        </script>
+    }
+}

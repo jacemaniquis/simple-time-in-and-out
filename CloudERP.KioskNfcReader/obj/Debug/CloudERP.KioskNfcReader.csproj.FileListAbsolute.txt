@@ -1,0 +1,18 @@
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\obj\Debug\CloudERP.KioskNfcReader.csprojResolveAssemblyReference.cache
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\bin\Debug\CloudERP.KioskNfcReader.exe.config
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\bin\Debug\CloudERP.KioskNfcReader.exe
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\bin\Debug\CloudERP.KioskNfcReader.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\bin\Debug\pcsc-sharp.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\bin\Debug\pcsc-sharp.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\bin\Debug\pcsc-sharp.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\obj\Debug\CloudERP.KioskNfcReader.exe
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskNfcReader\obj\Debug\CloudERP.KioskNfcReader.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\bin\Debug\CloudERP.KioskNfcReader.exe.config
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\bin\Debug\CloudERP.KioskNfcReader.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\bin\Debug\CloudERP.KioskNfcReader.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\bin\Debug\pcsc-sharp.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\bin\Debug\pcsc-sharp.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\bin\Debug\pcsc-sharp.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\obj\Debug\CloudERP.KioskNfcReader.csprojResolveAssemblyReference.cache
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\obj\Debug\CloudERP.KioskNfcReader.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskNfcReader\obj\Debug\CloudERP.KioskNfcReader.pdb

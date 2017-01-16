@@ -1,0 +1,136 @@
+﻿@using CloudERP.Context
+@model CloudERP.Web.Areas.HR.Models.EditUserModel
+
+@{
+    ViewBag.Title = "Edit User";
+    ViewBag.HeaderText = "Edit User";
+    Layout = "~/Views/Shared/_AuthenticatedLayout.cshtml";
+}
+
+
+<div class="col-lg-6">
+
+    @using (Html.BeginForm("Edit", "Users", FormMethod.Post, new { role = "form" }))
+    {
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Username, new { @class = "control-label" })
+
+            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", disabled = "" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.FirstName, new { @class = "control-label" })
+
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.MiddleName, new { @class = "control-label" })
+
+            @Html.TextBoxFor(m => m.MiddleName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.MiddleName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.LastName, new { @class = "control-label" })
+
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.RoleId, new { @class = "control-label" })
+
+            @Html.DropDownListFor(m => m.RoleId, GetRoles(), new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.MainScheduleId, new { @class = "control-label" })
+
+            @Html.DropDownListFor(m => m.MainScheduleId, GetMainSchedules(), new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.NewPassword, new { @class = "control-label" })
+
+            @Html.PasswordFor(m => m.NewPassword, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.NewPassword, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.RetypeNewPassword, new {@class = "control-label"})
+
+            @Html.PasswordFor(m => m.RetypeNewPassword, new {@class = "form-control"})
+            @Html.ValidationMessageFor(m => m.RetypeNewPassword, "", new {@class = "text-danger"})
+        </div>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <input type="submit" value="Update" class="btn btn-primary" />
+            <a href="@Url.Action("Index")" class="btn btn-default">Back</a>
+        </div>
+        @Html.HiddenFor(p => p.Id)
+    }
+
+    @using (Html.BeginForm("AssignNfcCard", "Users", FormMethod.Post, new { role = "form" }))
+    {
+        @Html.HiddenFor(p => p.Id)
+        <div class="form-group">
+            <input type="submit" value="Assign Card" class="btn btn-primary" />
+        </div>
+    }
+</div>
+
+@functions{
+    public List<SelectListItem> GetRoles()
+    {
+        var items = new List<SelectListItem>();
+        using (var context = new CloudERPDbContext())
+        {
+            var roles = context.HR_Roles.Select(p => p);
+            foreach (var item in roles)
+            {
+                items.Add(new SelectListItem()
+                {
+                    Text = item.RoleName,
+                    Value = item.Id.ToString()
+                });
+            }
+        }
+
+        if (items.Any())
+        {
+            items.FirstOrDefault().Selected = true;
+        }
+
+        return items;
+    }
+
+    public List<SelectListItem> GetMainSchedules()
+    {
+        var items = new List<SelectListItem>();
+        using (var context = new CloudERPDbContext())
+        {
+            var roles = context.HR_MainSchedule.Where(p => !p.IsDeleted).OrderBy(p => p.ScheduleNickname);
+            foreach (var item in roles)
+            {
+                items.Add(new SelectListItem()
+                {
+                    Text = item.TimeIn == null && item.TimeOut == null ? item.ScheduleNickname : string.Format("{0} ({1} - {2})", item.ScheduleNickname,
+                                            item.TimeIn != null ? item.TimeIn.Value.ToString("h:mm tt") : "N/A",
+                                            item.TimeOut != null ? item.TimeOut.Value.ToString("h:mm tt") : "N/A"),
+                    Value = item.Id.ToString()
+                });
+            }
+        }
+
+        if (items.Any())
+        {
+            items.FirstOrDefault().Selected = true;
+        }
+
+        return items;
+    }
+}

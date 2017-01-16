@@ -1,0 +1,120 @@
+﻿@model CloudERP.KioskWeb.Models.AssignCardModel
+
+@{
+    ViewBag.Title = "Assign Card";
+}
+
+<h2>Are you sure you want to assign the card to "@Model.Name"?</h2>
+
+<div id="serial" style="color:white"></div>
+
+@using (Html.BeginForm("AssignCardCancel", "Home", FormMethod.Post, new { role = "form" }))
+{
+    @Html.HiddenFor(p => p.Id, new { id = "pendingId" })
+
+    <div class="form-group">
+        <a id="assignbtn" class="btn btn-primary">Assign Card</a>
+        <input type="submit" value="Cancel" class="btn btn-primary" />
+    </div>
+}
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="vertical-alignment-helper">
+            <div id="modalContent" class="modal-content">
+                <div class="modal-header">
+
+                </div>
+                <div id="modalbody" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script>
+        $(function () {
+            $('#assignbtn').click(function () {
+                $('#modalbody').html('Please tap your card.');
+                $('#modal').modal('show');
+                //$('#serial').focus();
+            });
+
+            $('html').on('paste', function (e) {
+                var pasteData = e.originalEvent.clipboardData.getData('text');
+                $('#serial').html(pasteData);
+                $('#serial').click();
+            });
+
+            // Force focus
+            /*$('#serial').focusout(function () {
+                $('#serial').focus();
+            });
+
+            $('html').click(function () {
+                $('#serial').focus();
+            });*/
+
+
+            /*$('#serial').on('keydown', function (e) {
+                if (e.which == 13) {
+                    e.preventDefault();
+                    $.ajax({
+                        type: "POST",
+                        url: 'Url.Action("AssignCard", "Home")',
+                        data: { id: $('#pendingId').val(), serial: $('#serial').val() },
+                        success: function (data, status) {
+                            if (data !== "") {
+                                $('#modalbody').html('Successfully assigned.');
+                                setTimeout(function () {
+                                    window.location = "/";
+                                }, 2000);
+                            } else {
+                                $('#modalbody').html('Unexpected occur please contact admin for details.');
+                                setTimeout(function () {
+                                    window.location = "/";
+                                }, 2000);
+                            }
+                        },
+                        error: function () {
+
+                        }
+                    });
+                    $('#serial').val("");
+                }
+            });*/
+
+
+            $('#serial').click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("AssignCard", "Home")',
+                    data: { id: $('#pendingId').val(), serial: $('#serial').html() },
+                    success: function (data, status) {
+                        if (data !== "") {
+                            $('#modalbody').html('Successfully assigned.');
+                            setTimeout(function () {
+                                window.location = "/";
+                            }, 2000);
+                        } else {
+                            $('#modalbody').html('Unexpected occur please contact admin for details.');
+                            setTimeout(function () {
+                                window.location = "/";
+                            }, 2000);
+                        }
+                    },
+                    error: function () {
+                      
+                    }
+                });
+                $('#serial').html("");
+            });
+        });
+    </script>
+}

@@ -1,0 +1,39 @@
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.dll.config
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.dll
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.pdb
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.dll
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.xml
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.csprojResolveAssemblyReference.cache
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.dll
+C:\Users\Cloud\Documents\Visual Studio 2013\Projects\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.dll.config
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.csprojResolveAssemblyReference.cache
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.dll.config
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\CloudERP.Context.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.SqlServer.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\Newtonsoft.Json.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\EntityFramework.SqlServer.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\bin\Debug\Newtonsoft.Json.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.csprojResolveAssemblyReference.cache
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.Migrations.InitialCreate.resources
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.csproj.GenerateResource.Cache
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.Context\obj\Debug\CloudERP.Context.Migrations.AddedTimesheet.resources

@@ -1,0 +1,5 @@
+﻿HR - Human Resources (Recruiting, training, rostering, payroll, benefits, 401K, diversity management, retirement, separation)
+PM - Product Management (Project planning, resource planning, project costing, work breakdown structure, billing, time and expense, performance units, activity management)
+MA - Management Accounting (Budgeting, costing, cost management, activity based costing)
+FA - Financial Accounting (General ledger, fixed asset, payables including vouchering, matching and payment, receivables cash application and collections, cash management, financial consolidation)
+CRM - Customer Relationship Management (Sales and marketing, commissions, service, customer contact, call center support)

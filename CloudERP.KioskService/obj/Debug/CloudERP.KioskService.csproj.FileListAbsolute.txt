@@ -1,0 +1,22 @@
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.csprojResolveAssemblyReference.cache
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\bin\Debug\CloudERP.KioskService.exe.config
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\bin\Debug\CloudERP.KioskService.exe
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\bin\Debug\CloudERP.KioskService.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\bin\Debug\pcsc-sharp.dll
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\bin\Debug\pcsc-sharp.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\bin\Debug\pcsc-sharp.xml
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.exe
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.pdb
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.ProjectInstaller.resources
+D:\Projects\DTR Project Cloud\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.csproj.GenerateResource.Cache
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\bin\Debug\CloudERP.KioskService.exe.config
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\bin\Debug\CloudERP.KioskService.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\bin\Debug\CloudERP.KioskService.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\bin\Debug\pcsc-sharp.dll
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\bin\Debug\pcsc-sharp.pdb
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\bin\Debug\pcsc-sharp.xml
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.csprojResolveAssemblyReference.cache
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.ProjectInstaller.resources
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.csproj.GenerateResource.Cache
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.exe
+E:\Jace\My Projects\CloudERP\CloudERP\CloudERP.KioskService\obj\Debug\CloudERP.KioskService.pdb

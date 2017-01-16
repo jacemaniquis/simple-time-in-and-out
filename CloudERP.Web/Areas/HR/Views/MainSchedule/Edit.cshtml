@@ -1,0 +1,77 @@
+﻿@model CloudERP.Web.Areas.HR.Models.EditMainScheduleModel
+
+@{
+    ViewBag.Title = "Edit Main Schedule";
+    ViewBag.HeaderText = "Edit Main Schedule";
+    Layout = "~/Views/Shared/_AuthenticatedLayout.cshtml";
+}
+
+<div class="col-lg-12">
+
+    @using (Html.BeginForm("Edit", "MainSchedule", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+    {
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Nickname, new { @class = "control-label" })
+
+            @Html.TextBoxFor(m => m.Nickname, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Nickname, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.TimeIn, new { @class = "control-label" })
+
+            @Html.TextBoxFor(m => m.TimeIn, new { @class = "form-control timepicker" })
+            @Html.ValidationMessageFor(m => m.TimeIn, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.TimeOut, new {@class = "control-label"})
+
+            @Html.TextBoxFor(m => m.TimeOut, new {@class = "form-control timepicker"})
+            @Html.ValidationMessageFor(m => m.TimeOut, "", new {@class = "text-danger"})
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.IsDefault, new { @class = "control-label" })
+
+            @Html.DropDownListFor(m => m.IsDefault, new List<SelectListItem> { new SelectListItem()
+                {
+                    Text = "False",
+                    Value = "false"
+                },new SelectListItem()
+                {
+                    Text = "True",
+                    Value = "true"
+                } }, new { @class = "form-control" })
+        </div>
+
+        @Html.HiddenFor(p => p.Id)
+
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+            <a href="@Url.Action("Index")" class="btn btn-default">Back</a>
+        </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    }
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+        $('.timepicker').timepicker({
+            defaultTime: null
+        });
+
+        function formatAMPM(date) {
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var ampm = hours >= 12 ? 'pm' : 'am';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // the hour '0' should be '12'
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            var strTime = hours + ':' + minutes + ' ' + ampm;
+            return strTime;
+        }
+    </script>
+}

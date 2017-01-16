@@ -1,0 +1,23 @@
+﻿{
+    "manifest_version": 2,
+
+    "name": "Cloud Employee Daily Time Tracker",
+    "description": "This extension is used to track employee's daily time record",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "cloud-icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "cookies"
+    ],
+    "content_scripts": [
+        {
+            "js": [ "jquery-1.10.2.min.js", "popup.js" ],
+            "matches": [ "http://*/*", "https://*/*" ]
+        }
+    ]
+}
